@@ -18,17 +18,17 @@ export const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center gap-6">
-            <Button variant="ghost" className="gap-2">
+            <Button variant="ghost" className="gap-2" onClick={() => window.location.href = '/'}>
               <Users className="h-4 w-4" />
-              Alumni Database
+              Alumni Matching
             </Button>
-            <Button variant="ghost" className="gap-2">
+            <Button variant="ghost" className="gap-2" onClick={() => window.location.href = '/student-projects'}>
               <Calendar className="h-4 w-4" />
-              Events
+              Student Projects
             </Button>
-            <Button variant="ghost" className="gap-2">
+            <Button variant="ghost" className="gap-2" onClick={() => window.location.href = '/mentor-dashboard'}>
               <BrainCircuit className="h-4 w-4" />
-              AI Matching
+              Mentor Dashboard
             </Button>
           </nav>
 
